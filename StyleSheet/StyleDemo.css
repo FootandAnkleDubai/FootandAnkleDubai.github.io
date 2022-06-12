@@ -14,23 +14,12 @@
       height: 100%;
       margin: 0px;
       padding: 0px;
-      background-color:#ffffff;
+      background-color:#ececec;
+      align-items: center;
   }
-
-#dad {
-  width: 35em;
-  height: 30em;
-}
-
-#dadContainer {
-  align-items: right;
-}
-
-
 
 /* === HORIZONTAL TOOLBAR CSS === */
 
-  
   #navbar {
     overflow: hidden;
     background-image:var(--toolbarGradient);
@@ -76,8 +65,7 @@
   }
 
 
-
-/* === HEADER SECTION CSS === */
+/* === BANNER SECTION CSS === */
 
 .grid-container {
   display: grid;
@@ -142,33 +130,75 @@ h1 em {
   padding-left: 0.25em;
   color: rgba(0, 0, 0, 0.4);
   padding-bottom: 10px;
-  color:#e6e6e6 !important;
-}
-.alt-two h1 {
-  text-align:center;
-}
-.alt-two h1:before {
-  left:50%; margin-left:-30px;
+  color:#ffffff !important;
 }
 
+#dad {
+  width: 35em;
+  height: 30em;
+}
+
+#dadContainer {
+  align-items: right;
+}
+
+
+/* === SOCIAL MEDIA ICONS CSS === */
+
+.social-media-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 30em;
+}
+
+.fa {
+  padding-top: 0.9em;
+  font-size: 2em !important;
+  width: 2.9em;
+  height: 2em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #dcdcdc;
+  color:#004a5c;
+}
+
+.fa a {
+  padding: 0.5em;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
 /* === BLURB SECTION CSS === */
-.blurb-container {
-  grid-column-gap: 3em;
-  padding-top: 1%;
+.whole-blurb-container {
+  padding-top: 2%;
   padding-bottom: 1%;
-  display: grid;
-  grid-template-columns: 1fr 3fr ;
+  padding-left: 2em;
   align-items: center;
   text-align: justify;
   font-family: 'Raleway', sans-serif;
 }
 
+.blurb-container {
+  grid-column-gap: 3em;
+  display: grid;
+  grid-template-columns: 1fr 3fr ;
+  margin-bottom: 1.5em;
+}
+
 #blurb {
-  padding: 3em;
+  padding: 1.5em;
   background: #fff;
   box-shadow:
     0 5px 10px rgba(0, 0, 0, 0.1),
     0 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+#blurbSubTitle {
+  font-weight: 500;
 }
 
 #blurbTitle {
@@ -176,6 +206,22 @@ h1 em {
 }
 
 #footImage {
-  padding-left: 3em;
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 20px 20px rgba(0, 0, 0, 0.05);
 }
 
+/* === UNDER BLURB SECTION CSS === */
+
+.underBlurb {
+  padding: 1.5em;
+  background: #fff;
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 20px 20px rgba(0, 0, 0, 0.05);
+    float:left;
+  }
+
+.underBlurb p {
+ font-family: 'Raleway', sans-serif;
+}
