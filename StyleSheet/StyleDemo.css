@@ -1,7 +1,7 @@
 :root {
   --bannerGradient: linear-gradient( #33abb8, 	#006f8b );
   --activeBannerGradient: linear-gradient(#27628f, 	#014b6a );
-  --toolbarGradient: linear-gradient( #2e96a1, 	#015d74 );
+  --toolbarGradient: linear-gradient( #29848e, 	#015267 );
   --backgroundColor: #cad6da;
   --primColor: #dcdcdc;
   --secoColor: #555555;
@@ -82,7 +82,7 @@ section.header {
 
 section.header h1{
   position: relative;
-  padding: 0em;
+  padding-top: 0.4em;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 4em;
@@ -113,7 +113,7 @@ h1 em {
 .two h1:before {
   text-align:left ;
   position: absolute !important;
-  left: 0;
+  left: 0.5rem;
   bottom: 0;
   width: 4em;
   height: 0.01em;
@@ -136,6 +136,7 @@ h1 em {
 #dad {
   width: 35em;
   height: 30em;
+  padding-top: 0.6em;
 }
 
 #dadContainer {
