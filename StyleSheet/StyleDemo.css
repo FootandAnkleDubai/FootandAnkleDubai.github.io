@@ -10,10 +10,10 @@
 
   html,body
   {
-      width: 99.15%;
+      width: 100%;
       height: 100%;
-      margin: 0px;
-      padding: 0px;
+      margin: 0em;
+      padding: 0em;
       background-color:#ececec;
       align-items: center;
   }
