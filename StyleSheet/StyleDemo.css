@@ -73,7 +73,6 @@
 }
 
 section.header {
-  width: 100%;
   padding-top: 3em;
   padding-left: 2em;
   background: var(--bannerGradient);
@@ -136,7 +135,7 @@ h1 em {
 #dad {
   width: 35em;
   height: 30em;
-  padding-top: 0.6em;
+  padding-top: 0.4em;
 }
 
 #dadContainer {
