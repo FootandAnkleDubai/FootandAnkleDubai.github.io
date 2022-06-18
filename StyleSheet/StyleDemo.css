@@ -21,9 +21,7 @@
 /* === HORIZONTAL TOOLBAR CSS === */
 
   #navbar {
-    overflow: hidden;
     background-image:var(--toolbarGradient);
-    overflow-x: hidden;
     font-family: 'Raleway', sans-serif !important;
   }
   
@@ -174,9 +172,7 @@ h1 em {
 
 /* === BLURB SECTION CSS === */
 .whole-blurb-container {
-  padding-top: 2em;
-  padding-bottom: 1.5em;
-  padding-left: 2em;
+  padding: 2em 1.5em;
   align-items: center;
   text-align: justify;
   font-family: 'Raleway', sans-serif;
