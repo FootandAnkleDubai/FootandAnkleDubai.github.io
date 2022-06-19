@@ -118,7 +118,10 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 3em;  
+  align-items:flex-end;
 }
 
 section.header {
@@ -185,10 +188,11 @@ h1 em {
   width: 35em;
   height: 30em;
   padding-top: 0.4em;
+  object-fit: contain;
 }
 
 #dadContainer {
-  align-items: right;
+  align-items: flex-end;
 }
 
 
@@ -197,7 +201,7 @@ h1 em {
 .social-media-buttons {
   display: flex;
   justify-content: space-between;
-  width: 30em;
+  object-fit: contain;
 }
 
 .fa {
@@ -210,10 +214,7 @@ h1 em {
   border-radius: 50%;
   background-color: #dcdcdc;
   color:#004a5c;
-}
-
-.fa a {
-  padding: 0.5em;
+  object-fit: contain;
 }
 
 .fa:hover {
@@ -257,6 +258,13 @@ h1 em {
   box-shadow:
     0 5px 10px rgba(0, 0, 0, 0.1),
     0 20px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#blurbImage {
+  width: 100%;
 }
 
 /* === UNDER BLURB SECTION CSS === */
