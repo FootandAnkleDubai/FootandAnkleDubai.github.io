@@ -120,12 +120,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 1fr;
-  grid-gap: 3em;  
+  grid-column-gap: 5em;  
   align-items:flex-end;
 }
 
 section.header {
-  padding-top: 3em;
+  padding-top: 5em;
   padding-left: 2em;
   background: var(--bannerGradient);
   color: white;
@@ -134,7 +134,7 @@ section.header {
 
 section.header h1{
   position: relative;
-  padding-top: 0.4em;
+  padding-top: 0.5em;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 4em;
