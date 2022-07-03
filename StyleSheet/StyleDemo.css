@@ -81,7 +81,7 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 1.2em 1.4em;
+    padding: 1em 1em;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
@@ -118,7 +118,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 1fr;
   grid-gap: 3em;  
   align-items:flex-end;
@@ -190,12 +190,13 @@ h1 em {
   height: 30em;
   padding-top: 0.4em;
   object-fit: contain;
+  float: right;
 }
-
+/*
 #dadContainer {
   align-items: flex-end;
 }
-
+*/
 
 /* === SOCIAL MEDIA ICONS CSS === */
 
@@ -234,7 +235,8 @@ h1 em {
 .blurb-container {
   grid-column-gap: 3em;
   display: grid;
-  grid-template-columns: 1fr 3fr ;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
   margin-bottom: 1.5em;
 }
 
@@ -344,4 +346,21 @@ section.about-blurb {
     border-bottom: 1px dashed fade(var(color-light), 10%);
     padding-bottom: (var(spacing) * 0.5);
     margin-bottom: var(spacing); 
+  }
+
+
+
+  /* === TESTIMONIAL CSS SECTION ===*/
+  .test-img-right {
+    width: 40em;
+    height: 100%;
+    padding-right:1em;
+    float:right;
+  }
+
+  .test-img-left {
+    width: 40em;
+    height: 100%;
+    padding-right:1em;
+    float:left;
   }
