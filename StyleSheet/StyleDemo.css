@@ -220,6 +220,35 @@ h1 em {
 
 
 /* === BLURB SECTION CSS === */
+
+video{
+  padding-top: 1em;
+}
+
+@media screen and (max-width: 80000px) {
+video{
+  display: block; 
+  margin: auto;
+  width: 900px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  video{
+    display: block; 
+    margin: auto;
+    width: 400px;
+  }
+  }
+
+  @media screen and (max-width: 500px) {
+    video{
+      display: block; 
+      margin: auto;
+      width: 350px;
+    }
+    }
+
 .whole-blurb-container {
   padding: 2em 1.5em;
   align-items: center;
