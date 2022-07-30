@@ -94,7 +94,7 @@
   }
   
   #navbar a.active {
-    background-color: #024a5c ;
+    background-color: #ffffff1f ;
     color: white;
   }
   
@@ -192,11 +192,6 @@ h1 em {
   object-fit: contain;
   float: right;
 }
-/*
-#dadContainer {
-  align-items: flex-end;
-}
-*/
 
 /* === SOCIAL MEDIA ICONS CSS === */
 
@@ -256,7 +251,7 @@ h1 em {
 }
 
 #blurbTitle {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 #footImage {
@@ -267,9 +262,6 @@ h1 em {
   height: auto;
   justify-content: center !important;
   align-content: center !important;
-}
-
-#blurbImage {
 }
 
 /* === UNDER BLURB SECTION CSS === */
@@ -301,68 +293,76 @@ section.about-blurb {
 }
 
 /* === ABOUT TIMELINE CSS == */
-:root {
---color-primary: #004ffc;
---color-light: white;
---color-dim: #6c6d6d;
---spacing: 50px;
---radius: 4px;
-
---date: 120px;
---dotborder: 4px;
---dot: 11px;
---line: 4px;
-}
-
 .timeline {
-  border-left: var(line) solid #004ffc;
-  border-bottom-right-radius: var(radius);
-  border-top-right-radius: var(radius) ;   
-  background: fade(var(color-light), 3%);
-  color: fade(white, 80%); 
-  margin: var(spacing) auto;  
-  letter-spacing: 0.5px;   
-  position: relative;
-  line-height: 1.4em;
-  font-size: 1.03em;   
-  padding: var(spacing);   
-  list-style: none;
-  text-align: left;  
-  font-weight: 100;  
-  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  font-family: 'Raleway', sans-serif;
 }
+
+.t-title > h2,
+.t-title > h1 {
+  margin: 0;
+}
+
+.t-title > h2 {
+  opacity: 50%;
+}
+
+.t-events {
+  position: relative;
   
-  .timeline h1 {
-   letter-spacing: 1.5px;
-   font-weight: 100;
-   font-size: 1.4em;    
-  }
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  row-gap: 16px;
   
-  .timeline h2, h3 {
-   letter-spacing: 1.5px;
-   font-weight: 400;
-   font-size: 1.4em;
-  }
+  padding-top: 32px;
+  width: fit-content;
+}
+
+.t-event {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  column-gap: 16px;
+  grid-column: 1 / 3;
+}
+
+.t-date > h2,
+.t-description > p {
+  margin: 0;
+}
+
+.t-knob {
+  grid-column: 1 / 2;
+  align-self: center;
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  z-index: 1;
   
-  .event {
-    border-bottom: 1px dashed fade(var(color-light), 10%);
-    padding-bottom: (var(spacing) * 0.5);
-    margin-bottom: var(spacing); 
-  }
+  background: #4c4c4c;
+  border-radius: 50%;
+}
 
+.t-date,
+.t-description {
+  grid-column: 2 / 3;
+  align-self: center;
+}
 
+.t-description span {
+  opacity: .5;
+}
 
-  /* === TESTIMONIAL CSS SECTION ===*/
-  .test-img-right {
-    width: 40em;
-    height: 100%;
-    padding-right:1em;
-    float:right;
-  }
-
-  .test-img-left {
-    width: 40em;
-    height: 100%;
-    padding-right:1em;
-    float:left;
-  }
+.t-line {
+  position: absolute;
+  
+  grid-column: 1 / 2;
+  justify-self: center;
+  
+  height: 100%;
+  width: 4px;
+  z-index: 0;
+  
+  background-color: rgba(0, 0, 0, .1);
+}
